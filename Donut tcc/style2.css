@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trocchi', serif;
+    font-weight: bold;
+}
+
+/*Estilizando a header*/
+.logo h1 {
+    font-family: 'Arima', system-ui;
+    color: #E25B61;
+}
+
+.center {
+    display: flex;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 2%;
+    margin-top: 15px;
+
+}
+
+header {
+    padding: 10px;
+    background-color: white;
+
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-left: 10px;
+
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    width: 50%;
+    text-align: right;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(233, 55, 120);
+    margin-right: 100px;
+    font-family: 'Arima', system-ui;
+}
+
+.cardapio {
+    text-align: center;
+    padding: 40px;
+
+}
+
+/*TEXTO "CARDÁPIO" SOBRE A IMAGEM DA COBERTURA ESCORRENDO*/
+
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #EFEBE0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imagem {
+    width: 100%;
+    height: 300px;
+}
+
+.titulo-tradicionais {
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #d3165b;
+
+}
+
+.titulo-tradicionais h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Configurando lista*/
+.tradicionais li {
+    padding: 30px;
+    display: flex;
+    margin: 30px;
+    text-align: center;
+    width: 45%;
+    color: #d3165b;
+    background-image: linear-gradient(rgb(254, 226, 231), white, white);
+    border-radius: 50px;
+
+}
+
+.tradicionais h1 {
+    padding: 10px;
+    padding-top: 30px;
+    color: #B42057;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+
+.tradicionais img {
+    width: 300px;
+    height: 300px;
+}
+
+.tradicionais p {
+    font-family: 'Nunito', sans-serif;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*Estilizando a aba contato*/
+
+.contatos {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.contatos img {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+.localizacao img {
+    width: 65px;
+    height: 75px;
+}
+
+.insta {
+    display: flex;
+}
+
+.whats {
+    display: flex;
+}
+
+.localizacao {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.contatos h1 {
+    font-size: 20px;
+}
+
+.insta-e-whats p {
+    margin: 10px;
+    font-family: 'Arima', system-ui;
+    font-weight: bold;
+}
+
+.local {
+    text-align: center;
+    font-family: 'Arima', system-ui;
+
+}
+
+.local p {
+    font-family: 'Arima', system-ui;
+    font-weight: bold;
+}
+
+.local h1 {
+    font-weight: bold;
+}
+
+/*animação itens da lista*/
+
+.move-in {
+    animation: moveIn 1.5s ease-out forwards;
+}
+
+@keyframes moveIn {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*animacao da div container cardápio*/
+.move-down {
+    animation: moveDown 1.5s ease-out forwards;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arima', system-ui;
+    font-weight: bolder;
+}
+
+body {
+    background-image: url(assets/background.png);
+    background-size: 100%;
+}
+
+/*Estilizando a header*/
+
+.logo h1 {
+    font-family: 'Arima', system-ui;
+    font-weight: bold;
+    color: #E25B61;
+}
+
+.center {
+    display: flex;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 2%;
+    margin-top: 15px;
+
+}
+
+header {
+    padding: 10px;
+    background-color: white;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    width: 50%;
+    text-align: right;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(233, 55, 120);
+    margin-right: 100px;
+}
+
+/*Estilizando o carrossel de slides*/
+.carousel-inner {
+    max-width: 100%;
+    height: 500px;
+
+}
+
+.bordaRosa {
+    width: 100%;
+}
+
+/*Estilizando a div com os conteúdos sobre nos + nosso proposito*/
+.box-sobre-nos {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    margin: 60px;
+}
+
+.box-sobre-nos img {
+    width: 450px;
+    overflow: visible;
+    height: 450px;
+    margin: 20px;
+    padding-right: 30px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    width: 700px;
+}
+
+span {
+    padding: 5px;
+    font-size: 60px;
+    font-family: 'Arima', system-ui;
+}
+
+.infos p {
+    font-size: 20px;
+    
+}
+
+/*Mudando a cor de cada palavra nos títulos Sobre nós e Nosso propósito*/
+.texto-colorido span:nth-child(1) {
+    color: #6F4A31;
+}
+
+.texto-colorido span:nth-child(2) {
+    color: #F4777C;
+}
+
+.texto-colorido {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+/*fazendo o texto sobre a imagem*/
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #E25B61;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Arima', system-ui;
+}
+
+.imagem {
+    width: 100%;
+    height: 200px;
+}
+
+/*Estilizando o rodapé - contatos*/
+.contatos {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.contatos img {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+.localizacao img {
+    width: 65px;
+    height: 75px;
+}
+
+.insta {
+    display: flex;
+}
+
+.whats {
+    display: flex;
+}
+
+.localizacao {
+    display: flex;
+}
+
+.contatos h1 {
+    font-size: 20px;
+}
+
+.insta-e-whats p {
+    margin: 10px;
+    font-family: 'Arima', system-ui;
+    font-weight: bold;
+}
+
+.local {
+    margin: 20px;
+    text-align: center;
+    font-family: 'Arima', system-ui;
+}
+
+.local p {
+    font-family: 'Arima', system-ui;
+    font-weight: bold;
+}
+
+.local h1 {
+    font-weight: bold;
+}
